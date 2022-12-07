@@ -1,0 +1,91 @@
+
+[*] Starting run 1
+[[92mpypiserver-detect[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mrobots-txt-endpoint[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh/robots.txt
+[[92mself-signed-ssl[0m] [[94mssl[0m] [[32mlow[0m] scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mstrict-transport-security[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mreferrer-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-embedder-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-opener-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-resource-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-credentials[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mclear-site-data[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-origin[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-max-age[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-headers[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcontent-security-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mpermissions-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-frame-options[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-content-type-options[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-permitted-cross-domain-policies[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-expose-headers[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-methods[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mtls-version[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls13[0m]
+[[92mmismatched-ssl[0m] [[94mssl[0m] [[32mlow[0m] scanme.sh
+[[92mopenssh-detect[0m] [[94mnetwork[0m] [[34minfo[0m] scanme.sh:22 [[96mSSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4[0m]
+[[92mssl-issuer[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mpd[0m]
+[[92mnameserver-fingerprint[0m] [[94mdns[0m] [[34minfo[0m] scanme.sh [[96mns69.domaincontrol.com.[0m,[96mns70.domaincontrol.com.[0m]
+[[92mdeprecated-tls[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls10[0m]
+[[92mdeprecated-tls[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls11[0m]
+
+[*] Starting run 2
+[[92mpypiserver-detect[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mtls-version[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls13[0m]
+[[92mmismatched-ssl[0m] [[94mssl[0m] [[32mlow[0m] scanme.sh
+[[92mself-signed-ssl[0m] [[94mssl[0m] [[32mlow[0m] scanme.sh
+[[92mrobots-txt-endpoint[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh/robots.txt
+[[92mhttp-missing-security-headers[0m:[1;92mstrict-transport-security[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-frame-options[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mclear-site-data[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-resource-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-methods[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-headers[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcontent-security-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mpermissions-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-embedder-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-expose-headers[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-max-age[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-origin[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-content-type-options[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-permitted-cross-domain-policies[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mreferrer-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-opener-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-credentials[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mssl-issuer[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mpd[0m]
+[[92mopenssh-detect[0m] [[94mnetwork[0m] [[34minfo[0m] scanme.sh:22 [[96mSSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4[0m]
+[[92mnameserver-fingerprint[0m] [[94mdns[0m] [[34minfo[0m] scanme.sh [[96mns69.domaincontrol.com.[0m,[96mns70.domaincontrol.com.[0m]
+[[92mdeprecated-tls[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls10[0m]
+[[92mdeprecated-tls[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls11[0m]
+
+[*] Starting run 3
+[[92mpypiserver-detect[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mrobots-txt-endpoint[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh/robots.txt
+[[92mmismatched-ssl[0m] [[94mssl[0m] [[32mlow[0m] scanme.sh
+[[92mnameserver-fingerprint[0m] [[94mdns[0m] [[34minfo[0m] scanme.sh [[96mns70.domaincontrol.com.[0m,[96mns69.domaincontrol.com.[0m]
+[[92mssl-issuer[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mpd[0m]
+[[92mdeprecated-tls[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls10[0m]
+[[92mdeprecated-tls[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls11[0m]
+[[92mhttp-missing-security-headers[0m:[1;92mx-frame-options[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-opener-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-resource-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-expose-headers[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-headers[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mpermissions-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mclear-site-data[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcross-origin-embedder-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-origin[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mstrict-transport-security[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mcontent-security-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-content-type-options[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mx-permitted-cross-domain-policies[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-credentials[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-max-age[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92mreferrer-policy[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-methods[0m] [[94mhttp[0m] [[34minfo[0m] https://scanme.sh
+[[92mtls-version[0m] [[94mssl[0m] [[34minfo[0m] scanme.sh [[96mtls13[0m]
+[[92mopenssh-detect[0m] [[94mnetwork[0m] [[34minfo[0m] scanme.sh:22 [[96mSSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4[0m]
+[[92mself-signed-ssl[0m] [[94mssl[0m] [[32mlow[0m] scanme.sh
+      27 nuclei_run_1.txt
+      27 nuclei_run_2.txt
+      27 nuclei_run_3.txt
+      81 total

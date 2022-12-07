@@ -2,6 +2,7 @@ package main
 
 import (
 	"crypto/sha256"
+	"crypto/tls"
 	"flag"
 	"fmt"
 	"io"
@@ -41,6 +42,14 @@ func main() {
 	flag.BoolVar(&fixedworkers, "fixed", false, "Fixed/Bounded Goroutines")
 
 	flag.Parse()
+
+	t := http.Transport{
+		TLSClientConfig: &tls.Config{
+			InsecureSkipVerify: true,
+		},
+	}
+
+	http.DefaultClient.Transport = &t
 
 	runtime.GOMAXPROCS(*c)
 

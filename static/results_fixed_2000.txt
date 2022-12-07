@@ -1,0 +1,63 @@
+[*] Compiling simulate_nuclei.go
+
+[*] Compiling sysusage.go
+
+
+[*] Target URL is 2000
+
+[*] Target URL is https://scanme.sh
+
+200URL Reachable
+
+[*] Benchmarking Nuclei With Fixed Goroutines (2000) 
+
+[+] Nuclei with 5k hosts with 2000 Goroutines
+
+[*] ./simulate_nuclei -u https://scanme.sh -count 5000 -fixed -c 2000
+[+]Simulating Bounded Goroutines...
+[-]Go routines after scheduling all tasks 10187
+[-]Number of errors 0
+
+Max RSS: 267 MB ,Voluntary Context Switch (nvcsw): 2055
+Involuntary Context Switch(nivcsw): 286892,nswap: 0
+Sys Time: 2s , User Time: 22s
+
+
+[+] Nuclei with 10k hosts with 2000 Goroutines
+
+[*] ./simulate_nuclei -u https://scanme.sh -count 10000 -fixed -c 2000
+[+]Simulating Bounded Goroutines...
+[-]Go routines after scheduling all tasks 12995
+[-]Number of errors 0
+
+Max RSS: 321 MB ,Voluntary Context Switch (nvcsw): 5968
+Involuntary Context Switch(nivcsw): 599196,nswap: 0
+Sys Time: 4s , User Time: 43s
+
+
+[+] Nuclei with 25k hosts with 2000 Goroutines
+
+[*] ./simulate_nuclei -u https://scanme.sh -count 25000 -fixed -c 2000
+[+]Simulating Bounded Goroutines...
+[-]Go routines after scheduling all tasks 8548
+[-]Number of errors 0
+
+Max RSS: 322 MB ,Voluntary Context Switch (nvcsw): 18262
+Involuntary Context Switch(nivcsw): 1538269,nswap: 0
+Sys Time: 10s , User Time: 103s
+
+
+[+] Nuclei with 50k hosts with 2000 Goroutines
+
+[*] ./simulate_nuclei -u https://scanme.sh -count 50000 -fixed -c 2000
+[+]Simulating Bounded Goroutines...
+[-]Go routines after scheduling all tasks 7834
+[-]Number of errors 0
+
+Max RSS: 249 MB ,Voluntary Context Switch (nvcsw): 39529
+Involuntary Context Switch(nivcsw): 2962632,nswap: 0
+Sys Time: 20s , User Time: 199s
+
+
+[+] Done
+

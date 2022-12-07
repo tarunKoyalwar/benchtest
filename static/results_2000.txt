@@ -1,0 +1,83 @@
+[*] Compiling simulate_nuclei.go
+
+[*] Compiling sysusage.go
+
+
+[*] Target URL is https://scanme.sh
+
+200URL Reachable
+
+[*] Benchmarking Nuclei With Unlimited Goroutines
+
+[+] Nuclei with 5k hosts
+
+[*] ./simulate_nuclei -count 5000 -u https://scanme.sh
+[+]Simulating Unlimited Goroutines...
+[-]Go routines after scheduling all tasks 5419
+[-]Number of errors 0
+
+Max RSS: 422 MB ,Voluntary Context Switch (nvcsw): 907
+Involuntary Context Switch(nivcsw): 358294,nswap: 0
+Sys Time: 2s , User Time: 22s
+
+
+[+] Nuclei with 10k hosts 
+
+[*] ./simulate_nuclei -count 10000 -u https://scanme.sh
+[+]Simulating Unlimited Goroutines...
+[-]Go routines after scheduling all tasks 10419
+[-]Number of errors 79
+
+Max RSS: 849 MB ,Voluntary Context Switch (nvcsw): 3527
+Involuntary Context Switch(nivcsw): 670773,nswap: 0
+Sys Time: 5s , User Time: 44s
+
+
+[+] Nuclei with 25k hosts 
+
+[*] ./simulate_nuclei -count 25000 -u https://scanme.sh
+[+]Simulating Unlimited Goroutines...
+[-]Go routines after scheduling all tasks 26569
+[-]Number of errors 2764
+
+Max RSS: 1735 MB ,Voluntary Context Switch (nvcsw): 61274
+Involuntary Context Switch(nivcsw): 1726320,nswap: 0
+Sys Time: 28s , User Time: 107s
+
+
+[+] Nuclei with 50k hosts 
+
+[*] ./simulate_nuclei -count 50000 -u https://scanme.sh
+[+]Simulating Unlimited Goroutines...
+[-]Go routines after scheduling all tasks 125505
+[-]Number of errors 23715
+
+Max RSS: 5903 MB ,Voluntary Context Switch (nvcsw): 461867
+Involuntary Context Switch(nivcsw): 3969240,nswap: 0
+Sys Time: 137s , User Time: 193s
+
+
+[*] Benchmarking Nuclei With Fixed Goroutines () 
+
+[+] Nuclei with 5k hosts with  Goroutines
+
+[*] ./simulate_nuclei -count 5000 -fixed -c -u https://scanme.sh
+
+
+[+] Nuclei with 10k hosts with  Goroutines
+
+[*] ./simulate_nuclei -count 10000 -fixed -c -u https://scanme.sh
+
+
+[+] Nuclei with 25k hosts with  Goroutines
+
+[*] ./simulate_nuclei -count 25000 -fixed -c -u https://scanme.sh
+
+
+[+] Nuclei with 50k hosts with  Goroutines
+
+[*] ./simulate_nuclei -count 50000 -fixed -c -u https://scanme.sh
+
+
+[+] Done
+

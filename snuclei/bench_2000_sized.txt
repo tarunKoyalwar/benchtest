@@ -1,0 +1,85 @@
+[*] Compiling sysusage.go
+
+
+[*] Target URL is 2000
+
+[*] Target URL is https://scanme.sh
+
+200URL Reachable
+
+[*] Benchmarking Nuclei With Fixed Goroutines (2000) 
+
+[+] Nuclei with 5k hosts with 2000 Goroutines
+
+[*] ./snuclei -sizedwg -u https://scanme.sh -count 5000 -fixed -c 2000
+[+]Simulating SizedWaitgroup Goroutines...
+[-]Go routines after scheduling all tasks 5
+[-]Number of errors 0
+
+Max RSS: 225 MB ,Voluntary Context Switch (nvcsw): 2979
+Involuntary Context Switch(nivcsw): 335140,nswap: 0
+Sys Time: 2s , User Time: 22s
+
+
+[+] Nuclei with 10k hosts with 2000 Goroutines
+
+[*] ./snuclei -sizedwg -u https://scanme.sh -count 10000 -fixed -c 2000
+[+]Simulating SizedWaitgroup Goroutines...
+[-]Go routines after scheduling all tasks 5
+[-]Number of errors 0
+
+Max RSS: 238 MB ,Voluntary Context Switch (nvcsw): 6857
+Involuntary Context Switch(nivcsw): 633267,nswap: 0
+Sys Time: 4s , User Time: 41s
+
+
+[+] Nuclei with 25k hosts with 2000 Goroutines
+
+[*] ./snuclei -sizedwg -u https://scanme.sh -count 25000 -fixed -c 2000
+[+]Simulating SizedWaitgroup Goroutines...
+[-]Go routines after scheduling all tasks 5
+[-]Number of errors 0
+
+Max RSS: 233 MB ,Voluntary Context Switch (nvcsw): 19308
+Involuntary Context Switch(nivcsw): 1593527,nswap: 0
+Sys Time: 9s , User Time: 99s
+
+
+[+] Nuclei with 50k hosts with 2000 Goroutines
+
+[*] ./snuclei -sizedwg -u https://scanme.sh -count 50000 -fixed -c 2000
+[+]Simulating SizedWaitgroup Goroutines...
+[-]Go routines after scheduling all tasks 5
+[-]Number of errors 0
+
+Max RSS: 235 MB ,Voluntary Context Switch (nvcsw): 38122
+Involuntary Context Switch(nivcsw): 3075815,nswap: 0
+Sys Time: 18s , User Time: 192s
+
+
+[+] Nuclei with 75k hosts with 2000 Goroutines
+
+[*] ./snuclei -sizedwg -u https://scanme.sh -count 75000 -fixed -c 2000
+[+]Simulating SizedWaitgroup Goroutines...
+[-]Go routines after scheduling all tasks 5
+[-]Number of errors 2
+
+Max RSS: 243 MB ,Voluntary Context Switch (nvcsw): 57969
+Involuntary Context Switch(nivcsw): 4500503,nswap: 0
+Sys Time: 27s , User Time: 284s
+
+
+[+] Nuclei with 100k hosts with 2000 Goroutines
+
+[*] ./snuclei -sizedwg -u https://scanme.sh -count 100000 -fixed -c 2000
+[+]Simulating SizedWaitgroup Goroutines...
+[-]Go routines after scheduling all tasks 7
+[-]Number of errors 2
+
+Max RSS: 244 MB ,Voluntary Context Switch (nvcsw): 79295
+Involuntary Context Switch(nivcsw): 6108568,nswap: 0
+Sys Time: 35s , User Time: 379s
+
+
+[+] Done
+

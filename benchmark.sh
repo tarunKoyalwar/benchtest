@@ -4,8 +4,16 @@ if ! [ -f "simulate_nuclei.go" ]; then
    echo -e "simulate_nuclei.go not found"
    exit
 else
-   echo -e "\n\n[*] Compiling simulate_nuclei.go" ;
+   echo -e "[*] Compiling simulate_nuclei.go\n" ;
    go build ./simulate_nuclei.go
+fi
+
+if ! [ -f "sysusage.go" ]; then 
+   echo -e "sysusage.go not found"
+   exit
+else
+   echo -e "[*] Compiling sysusage.go\n\n" ;
+   go build ./sysusage.go
 fi
 
 # This depends mostly on network conditions and available RAM
@@ -23,6 +31,14 @@ function checkalive(){
    fi
 }
 
+if [ -z "$1" ]; then 
+   echo -e "Concurrency not set. defaulting to 2000"
+   CONCURRENCY="2000"
+else
+   CONCURRENCY=$1
+   echo -e "[*] Target URL is $CONCURRENCY\n"
+fi
+
 if [ -z "$2" ]; then 
    echo -e "Target URL not given, defaulting to http://192.168.29.119:9000/ "
    checkalive "http://192.168.29.119:9000/"
@@ -35,46 +51,55 @@ fi
 echo -e "[*] Benchmarking Nuclei With Unlimited Goroutines\n";
 
 echo -e "[+] Nuclei with 5k hosts\n"
-./simulate_nuclei -count 5000 $URL
+./sysusage ./simulate_nuclei -count 5000 $URL
 echo -e "\n"
 
 echo -e "[+] Nuclei with 10k hosts \n"
-./simulate_nuclei -count 10000 $URL
+./sysusage ./simulate_nuclei -count 10000 $URL
 echo -e "\n"
 
 echo -e "[+] Nuclei with 25k hosts \n"
-./simulate_nuclei -count 25000 $URL
+./sysusage ./simulate_nuclei -count 25000 $URL
 echo -e "\n"
 
 echo -e "[+] Nuclei with 50k hosts \n"
-./simulate_nuclei -count 50000 $URL
+./sysusage ./simulate_nuclei -count 50000 $URL
 echo -e "\n"
 
 echo -e "[+] Nuclei with 75k hosts \n"
-./simulate_nuclei -count 75000 $URL
+./sysusage ./simulate_nuclei -count 75000 $URL
+echo -e "\n"
+
+echo -e "[+] Nuclei with 100k hosts \n"
+./sysusage ./simulate_nuclei -count 100000 $URL
 echo -e "\n"
 
 echo -e "[*] Benchmarking Nuclei With Fixed Goroutines ($CONCURRENCY) \n";
 
 
 echo -e "[+] Nuclei with 5k hosts with $CONCURRENCY Goroutines\n"
-./simulate_nuclei -count 5000 -fixed -c $CONCURRENCY $URL
+./sysusage ./simulate_nuclei $URL -count 5000 -fixed -c $CONCURRENCY 
 echo -e "\n"
 
 echo -e "[+] Nuclei with 10k hosts with $CONCURRENCY Goroutines\n"
-./simulate_nuclei -count 10000 -fixed -c $CONCURRENCY $URL
+./sysusage ./simulate_nuclei $URL -count 10000 -fixed -c $CONCURRENCY 
 echo -e "\n"
 
 echo -e "[+] Nuclei with 25k hosts with $CONCURRENCY Goroutines\n"
-./simulate_nuclei -count 25000 -fixed -c $CONCURRENCY $URL
+./sysusage ./simulate_nuclei $URL -count 25000 -fixed -c $CONCURRENCY
 echo -e "\n"
 
 echo -e "[+] Nuclei with 50k hosts with $CONCURRENCY Goroutines\n"
-./simulate_nuclei -count 50000 -fixed -c $CONCURRENCY $URL
+./sysusage ./simulate_nuclei $URL -count 50000 -fixed -c $CONCURRENCY
 echo -e "\n"
 
 echo -e "[+] Nuclei with 75k hosts with $CONCURRENCY Goroutines\n"
-./simulate_nuclei -count 75000 -fixed -c $CONCURRENCY $URL
+./sysusage ./simulate_nuclei $URL -count 75000 -fixed -c $CONCURRENCY
 echo -e "\n"
+
+echo -e "[+] Nuclei with 100k hosts with $CONCURRENCY Goroutines\n"
+./sysusage ./simulate_nuclei $URL -count 100000 -fixed -c $CONCURRENCY
+echo -e "\n"
+
 
 echo -e "[+] Done\n"
